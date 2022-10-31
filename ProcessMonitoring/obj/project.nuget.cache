@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fUcZmJbQliSE1o8dE70vSLVLtttss8JRdyWWycJlPp5Zr4P29IbFp0kTFZ6vw6kVvmabFi6Swz7pi1JSDel9lg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessMonitoring\\ProcessMonitoring.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\giorgin\\.nuget\\packages\\nlog\\5.0.5\\nlog.5.0.5.nupkg.sha512",
+    "C:\\Users\\giorgin\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\giorgin\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
