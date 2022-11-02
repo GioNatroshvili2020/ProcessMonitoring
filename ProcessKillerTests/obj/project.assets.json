@@ -4022,11 +4022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessKillerTests\\ProcessKillerTests.csproj",
+      "projectUniqueName": "C:\\Users\\giorgin\\Desktop\\New folder (3)\\ProcessMonitoring\\ProcessKillerTests\\ProcessKillerTests.csproj",
       "projectName": "ProcessKillerTests",
-      "projectPath": "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessKillerTests\\ProcessKillerTests.csproj",
+      "projectPath": "C:\\Users\\giorgin\\Desktop\\New folder (3)\\ProcessMonitoring\\ProcessKillerTests\\ProcessKillerTests.csproj",
       "packagesPath": "C:\\Users\\giorgin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessKillerTests\\obj\\",
+      "outputPath": "C:\\Users\\giorgin\\Desktop\\New folder (3)\\ProcessMonitoring\\ProcessKillerTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4048,8 +4048,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessMonitoring\\ProcessMonitoring.csproj": {
-              "projectPath": "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessMonitoring\\ProcessMonitoring.csproj"
+            "C:\\Users\\giorgin\\Desktop\\New folder (3)\\ProcessMonitoring\\ProcessMonitoring\\ProcessMonitoring.csproj": {
+              "projectPath": "C:\\Users\\giorgin\\Desktop\\New folder (3)\\ProcessMonitoring\\ProcessMonitoring\\ProcessMonitoring.csproj"
             }
           }
         }

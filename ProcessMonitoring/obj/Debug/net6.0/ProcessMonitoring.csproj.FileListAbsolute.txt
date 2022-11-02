@@ -19,3 +19,24 @@ C:\Users\giorgin\source\repos\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6
 C:\Users\giorgin\source\repos\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.pdb
 C:\Users\giorgin\source\repos\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.genruntimeconfig.cache
 C:\Users\giorgin\source\repos\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ref\ProcessMonitoring.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\ProcessMonitoring.exe
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\nlog.config
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\ProcessMonitoring.deps.json
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\ProcessMonitoring.runtimeconfig.json
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\ProcessMonitoring.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\ProcessMonitoring.pdb
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\NLog.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\System.Management.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.csproj.AssemblyReference.cache
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.AssemblyInfoInputs.cache
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.AssemblyInfo.cs
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.csproj.CoreCompileInputs.cache
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.csproj.CopyComplete
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\refint\ProcessMonitoring.dll
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.pdb
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ProcessMonitoring.genruntimeconfig.cache
+C:\Users\giorgin\Desktop\New folder (3)\ProcessMonitoring\ProcessMonitoring\obj\Debug\net6.0\ref\ProcessMonitoring.dll

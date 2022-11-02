@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hH7LA10eTu4JrCjFNprJTCBi9g1f+ClS3C8RXgARW3mLuMYmX6BoIl3NN7zjM/AFWqEgrFSzqz9Mtn+VO5+44Q==",
+  "dgSpecHash": "om1Po7rxLTE3fKhSTD9Zz7C/+HkRez9SidqYypgygunq0x0wJw2OjhPmqBYub5qNaEqRziadRLJHBOsVlZ7S/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giorgin\\source\\repos\\ProcessMonitoring\\ProcessKillerTests\\ProcessKillerTests.csproj",
+  "projectFilePath": "C:\\Users\\giorgin\\Desktop\\New folder (3)\\ProcessMonitoring\\ProcessKillerTests\\ProcessKillerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\giorgin\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\giorgin\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
