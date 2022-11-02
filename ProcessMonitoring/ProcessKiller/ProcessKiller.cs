@@ -17,6 +17,13 @@ namespace ProcessMonitoring.ProcessKiller
 
         public ProcessKiller(string processName, int lifeTime, int frequency, NLog.Logger logger)
         {
+            if (string.IsNullOrEmpty(processName))
+                throw new ArgumentException("ProcessName is required");
+            else if (lifeTime==0)
+                throw new ArgumentException("lifeTime cannot be zero");
+            else if (frequency == 0)
+                throw new ArgumentException("frequency cannot be zero");
+
             _processName = processName;
             _lifeTime = lifeTime;
             _frequency = frequency;
@@ -33,7 +40,8 @@ namespace ProcessMonitoring.ProcessKiller
                 while (!_stopApplication)
                 {
                     _logger.Info($"Checking status of process named {_processName}");
-                    if (IsProcessRunning())
+                    bool isProcessRunning = IsProcessRunning();
+                    if (isProcessRunning)
                     {
 
                         _logger.Info($"Process named {_processName} is Active");
@@ -62,6 +70,11 @@ namespace ProcessMonitoring.ProcessKiller
 
                         }
                     }
+                    else
+                    {
+                        _processLastCheckDate = null;
+                    }
+                    _logger.Info($"process named {_processName} is running: {isProcessRunning}");
                     _logger.Info($"Monitoring continues after {_frequency} minute delay");
                     Thread.Sleep(_frequency * 60000);
                 }
@@ -82,7 +95,7 @@ namespace ProcessMonitoring.ProcessKiller
         private bool IsProcessRunning()
         {
             Process[] proc = Process.GetProcessesByName(_processName);
-            return !(proc.Length == 0 && proc == null);
+            return !(proc.Length == 0 || proc == null);
         }
         private void KillProcess()
         {
@@ -90,10 +103,10 @@ namespace ProcessMonitoring.ProcessKiller
             Process[] proc = Process.GetProcessesByName(_processName);            
             KillProcessAndChildrens(proc.First().Id);       
         }
-        private  void KillProcessAndChildrens(int pid)
+        private  void KillProcessAndChildrens(int pId)
         {
             ManagementObjectSearcher processSearcher = new ManagementObjectSearcher
-              ("Select * From Win32_Process Where ParentProcessID=" + pid);
+              ("Select * From Win32_Process Where ParentProcessID=" + pId);
             ManagementObjectCollection processCollection = processSearcher.Get();
             
             _logger.Info($"Stopping Child Processes of {_processName}");
@@ -112,7 +125,7 @@ namespace ProcessMonitoring.ProcessKiller
             // Then kill parents.
             try
             {
-                Process proc = Process.GetProcessById(pid);
+                Process proc = Process.GetProcessById(pId);
                 if (!proc.HasExited) proc.Kill();
             }
             catch (ArgumentException)

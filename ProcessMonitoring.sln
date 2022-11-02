@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessMonitoring", "ProcessMonitoring\ProcessMonitoring.csproj", "{7F0B6B2A-9499-491C-9F53-592AECFC1918}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessKillerTests", "ProcessKillerTests\ProcessKillerTests.csproj", "{AE3B1EB5-B91B-4F7C-91A4-D521621BB862}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7F0B6B2A-9499-491C-9F53-592AECFC1918}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F0B6B2A-9499-491C-9F53-592AECFC1918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F0B6B2A-9499-491C-9F53-592AECFC1918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3B1EB5-B91B-4F7C-91A4-D521621BB862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3B1EB5-B91B-4F7C-91A4-D521621BB862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3B1EB5-B91B-4F7C-91A4-D521621BB862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3B1EB5-B91B-4F7C-91A4-D521621BB862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
