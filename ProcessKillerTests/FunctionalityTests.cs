@@ -15,6 +15,16 @@ namespace ProcessKillerTests
         public void Setup()
         {
             _logger = NLog.LogManager.GetLogger("testLogger");//In Production application it will be created using dependency injection
+           
+            //kill all notpad processes before tests commence
+            Process[] proc = Process.GetProcessesByName("notepad");
+
+            foreach (var process in proc)//kill all notepad processes
+            {
+                process.Kill();
+
+            }
+
         }
 
         [Test]
@@ -23,8 +33,8 @@ namespace ProcessKillerTests
             Process.Start("Notepad");//starting notepad
             var processKiller = new ProcessKiller("Notepad", 1, 1, _logger);
         
-            Task.Run(() => processKiller.MonitorProcess());
-            Thread.Sleep(70000); //wait ~1 minute(little longer then lifetime to  compensate for program runtime)
+            Task.Run(() => processKiller.StartMonitoring());
+            Thread.Sleep(65000); //wait ~1 minute(little longer then lifetime to  compensate for notpead closing program runtime)
 
             Process[] proc = Process.GetProcessesByName("Notepad");
 
@@ -38,8 +48,8 @@ namespace ProcessKillerTests
             Process.Start("Notepad");//starting notepad
             var processKiller = new ProcessKiller("Notepad", 1, 1, _logger);
             
-            Task.Run(() => processKiller.MonitorProcess());
-            Thread.Sleep(70000); //wait ~1 minute(little longer than given lifetime to  compensate for program runtime delay)
+            Task.Run(() => processKiller.StartMonitoring());
+            Thread.Sleep(65000); //wait ~1 minute(little longer than given lifetime to  compensate for notpead closing program runtime delay)
 
             Process[] proc = Process.GetProcessesByName("Notepad");
 
@@ -48,7 +58,7 @@ namespace ProcessKillerTests
 
             //start notepad again
             Process.Start("Notepad");
-            Thread.Sleep(120000); //wait ~2 minute(we don't know at what exact moment was last monitoring check)
+            Thread.Sleep(125000); //wait ~2 minute(we don't know at what exact moment was last monitoring check)
 
             proc = Process.GetProcessesByName("Notepad");
             isNotepadRunning = !(proc.Length == 0 || proc == null);
@@ -61,8 +71,9 @@ namespace ProcessKillerTests
             Process.Start("Notepad");//starting notepad
             var processKiller = new ProcessKiller("Notepad", 1, 1, _logger);
 
-            Task.Run(() => processKiller.MonitorProcess());
+            Task.Run(() => processKiller.StartMonitoring());
             Thread.Sleep(2000); //wait few seconds for process monitor to see the process 
+
             //kill the process before process monitoring does it 
             Process[] proc = Process.GetProcessesByName("notepad");
 
@@ -74,7 +85,7 @@ namespace ProcessKillerTests
 
             //start process again 
             Process.Start("Notepad");//starting notepad        
-            Thread.Sleep(120000); //wait ~2 minute(we don't know at what exact moment was last monitoring check)
+            Thread.Sleep(125000); //wait ~2 minute(we don't know at what exact moment was last monitoring check)
 
             proc = Process.GetProcessesByName("Notepad");
             bool isNotepadRunning = !(proc.Length == 0 || proc == null);
